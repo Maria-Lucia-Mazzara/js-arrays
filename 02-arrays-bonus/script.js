@@ -33,6 +33,11 @@ for (let i = 0; i < teachers.length; i++) {
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
+const EdIndex = teachers.indexOf('Ed');
+if (teachers !== -1) { 
+  teachers.splice(1, 1); 
+}
+console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
